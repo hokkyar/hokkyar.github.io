@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo/logo-website.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>Hokky | Portofolio</title>
+</head>
+
+<body>
+
+    <!-- SOCIAL MEDIA FLOATING - START -->
+    <div class="social">
+        <ul>
+            <li><a target="_blank" href="https://web.facebook.com/hokky.aryasta"><i class="fab fa-facebook-f"></i><span>Facebook</span></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/hokky_ar"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/hokkyaryasta"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a></li>
+            <li><a target="_blank" href="https://github.com/hokkyar"><i class="fab fa-github"></i><span>Github</span></a></li>
+        </ul>
+    </div>
+    <!-- SOCIAL MEDIA FLOATING - END -->
+
+    <section id="navbar" style="display: none;">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Hokky Aryasta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" aria-current="page" href="#about">Home</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="#project">Project</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item mx-1">
+                            <label class="switch nav-link">
+                                <input type="checkbox" id="checkboxButton" onclick="toggle()"><span class="slider round"></span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section id="about">
+        <div id="header" class="jumbotron bg-primary header" style="padding-top: 5rem; color: white;">
+            <div class="container">
+                <img class=" mx-auto d-block rounded-circle img-thumbnail " src="img/foto/profile-picture-white.png" alt="profile" width="200">
+                <center>
+                    <h1 class="display-4 mt-3 ">Hokky Aryasta</h1>
+                    <p class="lead ">Mahasiswa | Sistem Informasi | Semester 4</p>
+                </center>
+            </div>
+            <div class="wave" style="margin-bottom: -60px;">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L80,245.3C160,203,320,117,480,101.3C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <center>
+                        <h1 class="display-4 mb-3 about-me">About Me</h1>
+                    </center>
+                </div>
+                <div class="col-md-8 fs-5 about-txt" style="text-align: justify; ">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis vel eveniet eligendi, ad autem voluptatibus est aperiam dicta animi, exercitationem, omnis adipisci deleniti. Libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis vel eveniet eligendi, ad autem voluptatibus est aperiam dicta animi, exercitationem, omnis adipisci deleniti. Libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat corporis vel eveniet eligendi, ad autem voluptatibus est aperiam dicta animi, exercitationem, omnis adipisci deleniti. Libero.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" style="background-color: #eee; padding: 2rem 0 5rem 0; ">
+        <div class="container ">
+            <h1 class="display-4 text-center mb-5 mt-5">My Project</h1>
+            <div class="row ">
+                <div class="col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="img/project/teenbaster.png" class="card-img-top p-2" alt="project" style="height: 190px;">
+                        <div class="card-body ">
+                            <h5 class="card-title "><b>Teenbaster</b></h5>
+                            <p class="card-text" style="text-align: justify;">Aplikasi pengelolaan kasir dan barang ditoko, website ini dibuat untuk memenuhi tugas kuliah semester 3.</p>
+                            <button type="button" class="detail btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#project-1">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 ">
+                    <div class="card">
+                        <img src="img/project/restaurant.png" class="card-img-top p-2" alt="project" style="height: 190px;">
+                        <div class="card-body ">
+                            <h5 class="card-title"><b>Hokky Restaurant</b></h5>
+                            <p class="card-text" style="text-align: justify;">Sebuah aplikasi pengelolaan pesanan pelanggan dan penjualan di restaurant makanan.</p>
+                            <button type="button" class="detail btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#project-2">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-3 ">
+                    <div class="card">
+                        <img src="img/project/sawanda-bali.png" class="card-img-top p-2" alt="project" style="height: 190px;">
+                        <div class="card-body ">
+                            <h5 class="card-title"><b>Sawanda Bali</b></h5>
+                            <p class="card-text" style="text-align: justify;">Landing page, yang bertujuan untuk mempromosikan produk atau barang khususnya buah-buahan yang segar.</p>
+                            <button type="button" class="detail btn btn-primary float-end" data-bs-toggle="modal" data-bs-target="#project-3">Lihat Detail</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col lainnya">
+                    <center>
+                        Lainnya :
+                        <a target="_blank" href="https://hokkyar.github.io/portofolio-1/" style="text-decoration: none;">Travel Guide</a> -
+                        <a target="_blank" href="https://hokkyar.github.io/portofolio-2/" style="text-decoration: none;">E-Company</a> -
+                        <a target="_blank" href="https://hokkyar.github.io/kalkulator1/" style="text-decoration: none;">Kalkulator 1</a> -
+                        <a target="_blank" href="https://hokkyar.github.io/kalkulator2/" style="text-decoration: none;">Kalkulator 2</a> -
+                        <a target="_blank" href="https://hokkyar.github.io/jam-digital/" style="text-decoration: none;">Jam Digital</a>
+                    </center>
+                    <center>
+                        Game :
+                        <a target="_blank" href="https://hokkyar.github.io/game/" style="text-decoration: none;">Suit Game</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" style="margin-bottom: 75px;">
+        <div class="container">
+            <h1 class="display-4 text-center mt-5 mb-5">Experience</h1>
+
+            <div class="card mb-3" style="width: 70%;">
+                <div class="card-header bg-primary text-white text-center">
+                    <strong>Mobile Legends Competition</strong>
+                </div>
+                <div class="card-body text-center">
+                    <blockquote class="blockquote">
+                        <p>Lomba Mobile Legends dalam rangka Pagelaran Akhir Tahun FTK 2020.</p>
+                        <div class="blockquote-footer">Universitas Pendidikan Ganesha, 21 Desember 2020</div>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="width: 70%;">
+                <div class="card-header bg-primary text-white text-center">
+                    <strong>Coding Competition Algobash</strong>
+                </div>
+                <div class="card-body text-center">
+                    <blockquote class="blockquote">
+                        <p>Menjadi peserta di Code Run Algobash 2021.</p>
+                        <div class="blockquote-footer">Bali, 30 November 2021</div>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="card mb-3" style="width: 70%;">
+                <div class="card-header bg-primary text-white text-center">
+                    <strong>Juara 2 Lomba Programming</strong>
+                </div>
+                <div class="card-body text-center">
+                    <blockquote class="blockquote">
+                        <p>Lomba Programming dalam rangka TI CUP 2022.</p>
+                        <div class="blockquote-footer">Universitas Pendidikan Ganesha, 28 Januari 2022</div>
+                    </blockquote>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" style="background-color: #eee; padding: 1rem 0 5rem 0; ">
+        <div class="container">
+            <h1 class="display-4 text-center mt-5 mb-5">My Skills</h1>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-2 text-center">
+                    <figure class="figure" style="width: 150px; margin-bottom: -5px;">
+                        <img style="height: 122px;" src="img/logo/bootstrap.png" class="figure-img img-fluid rounded" alt="bootstrap">
+                    </figure>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <figure class="figure" style="width: 100px; margin-top: 10px;">
+                        <img style="height: 85px;" src="img/logo/c++.png" class="figure-img img-fluid rounded" alt="c++">
+                    </figure>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <figure class="figure" style="width: 90px; margin: 15px 0 25px 0;">
+                        <img style="height: 75px;" src="img/logo/php.png" class="figure-img img-fluid rounded" alt="php">
+                    </figure>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <figure class="figure" style="width: 90px; margin: 15px 0 25px 0;">
+                        <img style="height: 83px;" src="img/logo/jquery.svg" class="figure-img img-fluid rounded" alt="jquery">
+                    </figure>
+                </div>
+
+                <div class="col-md-2 text-center">
+                    <figure class="figure" style="width: 90px; margin-top: 5px;">
+                        <img style="height: 93px;" src="img/logo/codeigniter.png" class="figure-img img-fluid rounded" alt="codeigniter">
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-primary">
+        <div class="wave" style="margin-top: -100px;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eee" fill-opacity="1" d="M0,320L48,304C96,288,192,256,288,224C384,192,480,160,576,160C672,160,768,192,864,208C960,224,1056,224,1152,202.7C1248,181,1344,139,1392,117.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h1 class="display-4 text-white text-center mb-3">Contact</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <form action="" method="POST">
+                        <div class="row justify-content-center pb-5 mt-3 kontak">
+                            <div id="kontak" class="col-lg-6 bg-dark" style="padding: 30px; border-radius: 5px;">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label" style="color: white;">Email :</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Masukkan email anda..">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pesan" class="form-label" style="color: white;">Pesan :</label>
+                                    <textarea class="form-control" id="pesan" rows="3" placeholder="Masukkan pesan anda.."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-light bg-light float-end">Kirim</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark" style="height: 50px; color: white;">
+        <p style="line-height: 50px;" class="text-center">&copy; 2022 | Built with <i class="heart">&hearts;</i> by <a style="color: white; text-decoration: none;" href="https://instagram.com/hokky_ar" target="_blank">Hokky Aryasta.</a></p>
+    </footer>
+
+
+
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+
+    <!-- Modal - 1 AWAL -->
+    <div class="modal fade" id="project-1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Teenbaster</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="c-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/project/teenbaster.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/teenbaster-2.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/teenbaster-3.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev bg-primary" type="button" data-bs-target="#c-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next bg-primary " type="button " data-bs-target="#c-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon " aria-hidden="true "></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4 " style="text-align: justify; ">
+                                <p>Aplikasi pengelolaan kasir dan barang ditoko, website ini dibuat untuk memenuhi tugas kuliah semester 3.</p>
+                                Link : <a style="text-decoration: none;" target="_blank" href="https://teenbaster.000webhostapp.com/ ">Teenbaster</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - 1 AKHIR -->
+
+    <!-- Modal - 2 AWAL -->
+    <div class="modal fade" id="project-2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Hokky Restaurant</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="c-2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/project/restaurant-2.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/restaurant.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/restaurant-3.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev bg-primary" type="button" data-bs-target="#c-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next bg-primary" type="button" data-bs-target="#c-2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="text-align: justify;">
+                                <p>Aplikasi pengelolaan pesanan pelanggan dan penjualan di restaurant makanan, website ini menggunakan php dan js sebagai fondasinya.</p>
+                                Link : <a style="text-decoration: none;" target="_blank" href="#">Hokky Restaurant</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - 2 AKHIR -->
+
+    <!-- Modal - 3 AWAL -->
+    <div class="modal fade" id="project-3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sawanda Bali</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div id="c-3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="img/project/sawanda-bali.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/sawanda-bali-2.png" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="img/project/sawanda-bali-3.png" class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev bg-primary" type="button" data-bs-target="#c-3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next bg-primary" type="button" data-bs-target="#c-3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-4" style="text-align: justify;">
+                                <p>Sebuah website landing page, yang bertujuan untuk mempromosikan produk atau barang khususnya buah-buahan yang segar.</p>
+                                Link : <a style="text-decoration: none;" target="_blank" href="https://sawandabali.com/">Sawanda Bali</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal - 3 AKHIR -->
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 3) {
+                $('#navbar').fadeIn(300);
+            } else {
+                $('#navbar').fadeOut(300);
+            };
+        });
+
+        function toggle() {
+            if (document.getElementById("checkboxButton").checked == true) {
+                toggleON();
+            } else {
+                toggleOFF();
+            }
+        }
+
+        function toggleON() {
+            $('.detail').removeClass('btn-primary').addClass('btn-dark');
+            $('#header').removeClass('bg-primary').addClass('bg-dark');
+            $('nav').removeClass('bg-primary').addClass('bg-dark');
+            $('.card-header').removeClass('bg-primary').addClass('bg-dark');
+            $('#contact').removeClass('bg-primary').addClass('bg-dark');
+            $('.carousel-control-prev').removeClass('bg-primary').addClass('bg-dark');
+            $('.carousel-control-next').removeClass('bg-primary').addClass('bg-dark');
+            $('#project').addClass('bg-dark');
+            $('#project h1').css('color', 'white');
+            $('#kontak').addClass('border-putih');
+            $('.lainnya').addClass('text-white');
+            $('.lainnya a').addClass('biru-muda');
+        }
+
+        function toggleOFF() {
+            $('.detail').removeClass('btn-dark').addClass('btn-primary');
+            $('#header').removeClass('bg-dark').addClass('bg-primary');
+            $('nav').removeClass('bg-dark').addClass('bg-primary');
+            $('.card-header').removeClass('bg-dark').addClass('bg-primary');
+            $('#contact').removeClass('bg-dark').addClass('bg-primary');
+            $('.carousel-control-prev').removeClass('bg-dark').addClass('bg-primary');
+            $('.carousel-control-next').removeClass('bg-dark').addClass('bg-primary');
+            $('#project').removeClass('bg-dark');
+            $('#project h1').css('color', 'black');
+            $('#kontak').removeClass('border-putih');
+            $('.lainnya').removeClass('text-white');
+            $('.lainnya a').removeClass('biru-muda');
+        }
+    </script>
+
+</body>
+
+</html>
