@@ -237,20 +237,34 @@
             <div class="row">
                 <h1 class="display-4 text-white text-center mb-3">Contact</h1>
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
+                <div class="alert alert-success alert-dismissible fade show col-md-6 d-none" role="alert">
+                    <strong>Terkirim!</strong> Terimakasih sudah mengirim pesan.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show col-md-6 d-none" role="alert">
+                    <strong>Gagal!</strong> Pesan gagal terkirim.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 <div class="col-md-12">
-                    <form action="" method="POST">
+                    <form name="submit-to-google-sheet">
                         <div class="row justify-content-center pb-5 mt-3 kontak">
                             <div id="kontak" class="col-lg-6 bg-dark" style="padding: 30px; border-radius: 5px;">
                                 <div class="mb-3">
+                                    <label for="nama" class="form-label" style="color: white;">Nama :</label>
+                                    <input type="nama" class="form-control" id="nama" placeholder="Masukkan nama anda.." required name="nama">
+                                </div>
+
+                                <div class="mb-3">
                                     <label for="email" class="form-label" style="color: white;">Email :</label>
-                                    <input type="email" class="form-control" id="email" placeholder="Masukkan email anda..">
+                                    <input type="email" class="form-control" id="email" placeholder="Masukkan email anda.." required name="email">
                                 </div>
                                 <div class="mb-3">
                                     <label for="pesan" class="form-label" style="color: white;">Pesan :</label>
-                                    <textarea class="form-control" id="pesan" rows="3" placeholder="Masukkan pesan anda.."></textarea>
+                                    <textarea class="form-control" id="pesan" rows="3" placeholder="Masukkan pesan anda.." name="pesan" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-light bg-light float-end">Kirim</button>
+                                <button type="submit" class="btn btn-light bg-light float-end btn-kirim">Kirim</button>
+                                <button class="btn btn-light float-end btn-loading d-none" type="button" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...</button>
                             </div>
                         </div>
                     </form>
@@ -459,6 +473,38 @@
         }
     </script>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwv3BFAhIF6SSIhd_59QtNNsY8UYNwE67UqeHUWB3pE2yvgqmDPUWbzRPNWGy8UdCAcbw/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const alertSukses = document.querySelector('.alert-success');
+        const alertGagal = document.querySelector('.alert-danger');
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btnKirim.classList.toggle('d-none');
+            btnLoading.classList.toggle('d-none');
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    btnKirim.classList.toggle('d-none');
+                    btnLoading.classList.toggle('d-none');
+                    alertSukses.classList.toggle('d-none');
+                    form.reset();
+                    console.log('Success!', response);
+                })
+                .catch(error => {
+                    btnKirim.classList.toggle('d-none');
+                    btnLoading.classList.toggle('d-none');
+                    alertGagal.classList.toggle('d-none');
+                    form.reset();
+                    console.error('Error!', error.message);
+                })
+        });
+    </script>
 </body>
 
 </html>
