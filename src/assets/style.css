@@ -452,7 +452,13 @@ header nav ul li a:hover {
   }
 
   .wrapper {
-    padding: 4rem 1rem;
+    padding: 0 1rem;
+    border: 1px solid;
+  }
+
+  .container {
+    height: 97.5vh;
+    margin: 1rem 0;
   }
 
   .home .text-typing {
@@ -463,16 +469,20 @@ header nav ul li a:hover {
     font-size: 2rem;
   }
 
+  .home .share {
+    transform: translateY(100%);
+  }
+
+  .home .share a {
+    margin: .5rem;
+  }
+
   .terkirim {
     width: 100%;
   }
 
   .skill-box {
     font-size: 6.5rem;
-  }
-
-  .container {
-    height: 90vh;
   }
 
   .contact-container {
